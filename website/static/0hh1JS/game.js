@@ -509,7 +509,7 @@ var Game = new (function() {
 
   function setScore(addPoints) {
     clearTimeout(setScore.TOH)
-    var curScore = score = getScore(),
+    var curScore = getScore(),
         newScore = curScore + (addPoints? addPoints : 0);
     if (newScore <= curScore) 
       return curScore;
